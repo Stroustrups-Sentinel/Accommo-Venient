@@ -64,6 +64,15 @@
    ```
 
 
+---
+<details>
+
+  <summary> <h3>Schema ERD</h3> </summary>
+
+  ![erd-image](https://raw.githubusercontent.com/Stroustrups-Sentinel/Accommo-Venient/64cc0659291823a1a83136259aa3f5532c64d257/pictureDB/bd2c726d7ff0ebe4379d04fe0ca5a82d.svg)
+
+
+</details>
 
 ---
 
