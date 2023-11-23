@@ -8,7 +8,7 @@
       of version management was zipping files and giving 
       the zipfile names a time and date so i can know 
       when i last did changes haha😂.
-    - well to think it was in an optimistic way the same 
+    - well to think it was "in an optimistic way" the same 
       way github handles repos, except its much more 
       efficient and does it in a distributed way.
 ---
@@ -25,13 +25,14 @@
     -/📂resources     (website resources)
     -/📄accommo_venientdb.sql    (SQL script | used MysqlDB)
     -/📄*.html        (page html file)
+    -/📄Dockerfile    (dockerfile) 
     -/📄README.md     (readme doc) 
 
 ---
 
 ### Setting up project
 
-1. Start an instance of MysqlDB server
+1. Start an instance of MysqlDB or MariaDB server
 2. Add the **Accommo-Venient** database by either doing so: 
    1. Import and run the sql script `/📄accommo_venientdb.sql`
    2. Copy and run the database creation script in `/📄accommo_venientdb.sql` on `line 22` to `line 34`
@@ -54,16 +55,19 @@
 
 ### Running the project
 
-   - now that the setup is complete, you can now run the project
-     -  👉 make sure you have **php** installed or get it here [<https://php.net>] or [<https://www.apachefriends.org/>] .
-   - inside the project's root folder `/`  open your terminal and start the php server on a port of your choosing e.g on port 8080 we run the command 
+   - Now that the setup is complete, you can now run the project
+   - You can use [**docker**](https://www.docker.com/products/docker-desktop/) build and run the dockerfile  `./📄Dockerfile` or if you don't want to install the softwares manually 
+     -  👉 Make sure you have **php** installed or get it here [<https://php.net>] or [<https://www.apachefriends.org/>] .
+   - Inside the project's root folder `/`  open your terminal and start the php server on a port of your choosing e.g on port 8080 we run the command 
    ```bash
    php -S localhost:8080
    ```
 
+
+
 ---
 
-😎 **FREE!** ebooks: <https://goalkicker.com>
+😎 **FREE!** ebooks: [<https://goalkicker.com>]
 ###### *they are very good for use as <u>reference books</u> than reading from scratch, unless you're quite seasoned in the fine arts of programming.
 ###### *personally i do use them when coding since you cant memorize everything in a programming language unless its the only thing you code in and it doesn't get updated.
 
@@ -83,7 +87,7 @@
       toy that could do all kinds of amazing stuff you 
       had not given thought to.
 
-🆓 OSS GUI prototyping: <https://pencil.evolus.vn/>
+🆓 OSS GUI prototyping: [<https://pencil.evolus.vn/>]
 ###### *although these days im more into [`lunacy`](https://icons8.com/lunacy) and [`figma`](https://figma.com), those days [`pencil`](https://pencil.evolus.vn) was my first intro to wireframing, the experience was a nice and simple one.
 
     - fast forward to 2023 and out of nostalgia this 
