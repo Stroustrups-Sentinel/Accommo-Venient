@@ -1,0 +1,235 @@
+/*
+    -- #filename       : house-details.css
+    -- #authors-quote  : This Project Belongs to the CTHSC students Fortunate .M, Phillippa .M and Mc Samuel .S *2020-February-Semester
+    -- ********************************************************************************************************************************* 
+    -- vanilla css 
+*/
+
+.house-details {
+    /*the main panel that has everything*/
+    padding: 4%;
+    margin: 3%;
+    border: none #0f1626;
+    background-color: #aaaaaa39;
+    box-shadow: 1px 10px 50px 0px #ab987a;
+}
+
+#detailed-info {
+    background-color: #aaaaaa40;
+    padding: 2rem;
+}
+
+.p-details {
+    padding: 1em;
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+@media screen and (max-width:720px) {
+    .p-details {
+        margin: auto;
+    }
+}
+
+.essentials,
+.offered {
+    color: #AB987A;
+}
+
+.ratings {
+    padding: 0%;
+    background-color: #0f1626f9;
+    transition: background-color 35s;
+}
+
+.reviews {
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #aaaaaa29;
+}
+
+
+/*map styling*/
+
+.map-and-pics {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+@media screen and (max-width:720px) {
+    .map-and-pics {
+        display: block;
+    }
+}
+
+.l-parent {
+    display: grid;
+    grid-template-columns: 5fr 2fr 1fr;
+    box-shadow: 5px 4px 7px 2px #aaaaaa;
+}
+
+@media screen and (max-width:720px) {
+    .l-parent {
+        display: block;
+    }
+}
+
+.l-contact-info,
+.prof-pic,
+.l-details {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: #aaaaaa90;
+    border-top: #f5f5f5 solid 0.1rem;
+}
+
+.l-details li p {
+    display: inline;
+}
+
+.l-details li .b {
+    font-weight: bold;
+}
+
+.l-contact-info li {
+    list-style: none;
+}
+
+.l-details li {
+    list-style: none;
+}
+
+.house-location {
+    min-height: 15rem;
+    width: 95%;
+    border: #ff533d dashed;
+    background-color: teal;
+    box-shadow: 5px 4px 7px 2px #aaaaaa;
+}
+
+@media screen and (max-width:720px) {
+    .house-location {
+        margin-bottom: 2em;
+    }
+}
+
+.house-img {
+    min-height: 30rem;
+    width: 95%;
+    border: #0f1926 dashed;
+    background-color: green;
+    box-shadow: 5px 4px 7px 2px #aaaaaa;
+}
+
+.prof-pic {
+    padding: 0.5em;
+}
+
+.prof-pic img {
+    background-color: #0f1926;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 40%;
+    border: #f5f5f5 solid;
+    object-fit: cover;
+    image-rendering: auto;
+}
+
+.reviews {
+    min-height: 10rem;
+}
+
+.add-comment {
+    display: flexbox;
+    flex-direction: row;
+}
+
+section.comment {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    margin-top: 1em;
+    padding: 0.25em;
+    background-color: #aaaaaa40;
+}
+
+.comment-box {
+    width: 80%;
+    min-height: 5rem;
+    padding: 1em;
+    font: inherit;
+}
+
+div.ratings {
+    padding: 0%;
+    color: #f5f5f5;
+    margin: unset;
+}
+
+div.ratings p {
+    margin: 0.1em;
+    padding-left: 35%;
+    padding-right: 35%;
+    background-color: #ff533d;
+}
+
+.comment-time {
+    width: 15em;
+    background-color: #ff533d50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 1em;
+}
+
+.comment-prof {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.comment-user-prof {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    padding: 0.5em;
+    width: 80%;
+    height: 100%;
+    background-color: #aaaaaa90;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: inset 5px 4px 7px 0px #aaaaaa;
+}
+
+.comment-img {
+    border: #AB987A solid;
+    background-color: #0f1926;
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+input#alias-comment {
+    margin: unset;
+    margin-left: 1em;
+    margin-right: 20%;
+    padding: unset;
+    width: unset;
+    min-width: unset;
+}
+
+input#rating {
+    margin: unset;
+    margin-left: 1em;
+    text-align: center;
+    padding: unset;
+    width: 3em;
+    min-width: unset;
+    color: #ff533d;
+    font-weight: bolder;
+    background-color: #0f1926;
+}

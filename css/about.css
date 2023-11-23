@@ -1,0 +1,358 @@
+/*
+    -- #filename       : about.css
+    -- #authors-quote  : This Project Belongs to the CTHSC students Fortunate .M, Phillippa .M and Mc Samuel .S *2020-February-Semester
+    -- ********************************************************************************************************************************* 
+ 
+*/
+
+.mini-adv {
+    padding: 15%;
+}
+
+.about-us {
+    background-color: #aaaaaa39;
+    padding: 2%;
+    margin: 3%;
+    margin-bottom: 5%;
+    line-height: 1.5em;
+    box-shadow: 1px 10px 50px 0px #ab987a;
+}
+
+.about-tabs {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    list-style-position: inside;
+    list-style-type: lower-roman;
+    color: #0f1629;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: #f5f5f5;
+    padding: 0.2em;
+    font-size: large;
+    justify-content: center;
+    align-content: center;
+}
+
+@media screen and (max-width:800px) {
+    .about-tabs {
+        justify-content: start;
+        align-content: flex-start;
+    }
+}
+
+.about-tabs a {
+    color: inherit;
+}
+
+.about-tabs li {
+    padding: 0.5em;
+    margin: .1em;
+    padding-right: 1em;
+    margin-right: 1em;
+    padding-left: 1em;
+    margin-left: 1em;
+    background-color: #aaaaaa99/*#ff533d50;*/
+    ;
+    /* text-decoration: underline; */
+}
+
+.about-tabs li:hover {
+    background-color: #ff533d;
+    /* color: #f5f5f5; */
+    /* text-decoration: underline; */
+}
+
+.about-tabs li a:hover {
+    color: #f5f5f5;
+}
+
+article {
+    background-color: #f5f5f5;
+    border-top: #0f1629 solid;
+    border-bottom: #0f1629 solid;
+}
+
+.article-cont {
+    display: none;
+}
+
+.article-cont.active {
+    display: block;
+}
+
+.active-tab {
+    border-left: #0f1629 solid 3em;
+}
+
+
+/* article and child element(s) styling*/
+
+#story {
+    padding: 1em;
+    text-justify: newspaper;
+    box-shadow: 1px 5px 5px 0px #aaaaaa;
+}
+
+.story-time-scale {
+    color: #ff533d;
+    background-color: #aaaaaa50;
+    border-bottom: currentColor solid;
+    font-weight: 800;
+    display: inline-flex;
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 5px 4px 7px 0px #aaaaaa;
+}
+
+.story-time-scale svg {
+    width: 1em;
+    height: 1em;
+    border: currentColor solid;
+    border-radius: 10%;
+    margin-right: 1em;
+    fill: #ff533d;
+}
+
+#story ul {
+    list-style-type: circle;
+}
+
+.min-conc {
+    padding: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+    color: #ff533d;
+    border-bottom: #ff533d solid;
+    background-color: #ff533d15;
+    box-shadow: 5px 4px 7px 0px #aaaaaa;
+}
+
+@media screen and (max-width:600px) {
+    .min-conc {
+        margin: auto;
+    }
+}
+
+.mini-adv>b {
+    color: #0f1629;
+    background-color: #ff533d40;
+}
+
+#contact-us {
+    background-color: #f5f5f5;
+}
+
+#contact-us>ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: unset;
+    border-right: #ff533d solid;
+}
+
+#contact-us ul section:not(.active-section) {
+    display: none;
+}
+
+.active-section {
+    display: block;
+}
+
+.active-p-tab {
+    border-right: #ff533d solid 1em;
+    border-left: #ff533d solid 1em;
+}
+
+#contact-us li>p:hover {
+    cursor: pointer;
+    background-color: #ff533d;
+    color: #f5f5f5;
+}
+
+#contact-us li>p>b {
+    width: 1em;
+    height: 1em;
+    border: solid;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.contact-adv {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    color: #0f1629;
+    background-color: #ff533d40;
+    margin: 0.5em;
+    padding: 0.5em;
+    /* text-align: center; */
+}
+
+.contact-adv:not(p) {
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.contact-social-entry {
+    display: grid;
+    grid-template-columns: 4em auto;
+    border: #ab987a solid 0.1em;
+    border-radius: 1%;
+    margin-bottom: 1em;
+    margin: 0.5em;
+}
+
+.contact-social-entry:hover {
+    position: relative;
+    z-index: 1;
+    top: -0.5em;
+    border: dashed 0.1em;
+}
+
+.contact-sect {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-social-ico {
+    background-color: #ab987a;
+    width: 4em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.contact-social-para {
+    background-color: #ab987a30;
+    padding-left: 2em;
+    padding: 0.5em;
+    width: fit-content;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+
+.contact-social-para a {
+    margin-left: 1em;
+}
+
+.contact-dev {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.contact-dev-entry {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: #ab987a40;
+    border-radius: 1%;
+}
+
+.contact-dev-img img {
+    width: 7em;
+    height: 7em;
+    border: #ab987a outset;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.contact-dev-para ul {
+    list-style-type: square;
+    font-weight: 200;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #0f1629;
+}
+
+.dev-img-m {
+    background-color: skyblue;
+}
+
+.dev-img-f {
+    background-color: pink;
+}
+
+.soc-para-svg {
+    width: 1em;
+    height: 1em;
+    background-color: #f5f5f5;
+}
+
+.contact-donate {
+    display: flex;
+    flex-wrap: wrap;
+    color: #f5f5f5;
+}
+
+.contact-dona-entry {
+    border: #aaaaaa dashed 0.05em;
+    background-color: #0f1629;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: 0.4em;
+    padding: 0.4em;
+}
+
+.contact-dona-entry:hover {
+    position: relative;
+    z-index: 1;
+    top: -0.5em;
+    color: #ab987a;
+    border: #aaaaaa solid 0.1em;
+}
+
+.contact-dona-img {
+    width: 6em;
+    background-color: #aaaaaa;
+    border-radius: 1%;
+    margin-right: 0.5em;
+}
+
+.contact-dona-para p {
+    width: 80%;
+    text-align: justify;
+}
+
+.contact-dona-para a {
+    color: #ff533d;
+}
+
+.contact-social-svg {
+    height: 3em;
+    width: 3em;
+}
+
+.contact-dona-svg {
+    height: 5em;
+    width: 5em;
+}
+
+#terms-and-conditions {
+    /* background-color: #ab987a50; */
+    padding: 1em;
+    font-weight: 600;
+}
+
+#privacy-policy {
+    background-color: #f5f5f5;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+#privacy-policy p {
+    padding-left: 2em;
+}
+
+#credits {
+    background-color: #f5f5f5;
+    padding: 0.5em;
+}
+
+#credits ul {
+    list-style: square;
+}
+
+article#credits ul:nth-child(even) {
+    background-color: #ab987a;
+}

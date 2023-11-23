@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommo-Venient - Dashboard | Landlord</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="resources/logo.png" alt="Accommo-Venient : Logo-Here" class="logo" /></a>
+        <a href="index.html" class="header-links"> Home </a>
+        <!-- <a href="house-details.html" class="header-links">House Details</a> -->
+        <a href="about.html" class="header-links">About</a>
+        <a type="submit" class="header-links" id="logout-btn">Sign out</a>
+
+    </header>
+
+    <div class="mini-adv" id="user-details">
+        <h2>--------</h2>
+
+    </div>
+
+    <section class="user-details">
+
+
+        <noscript class="warn">Please enable JavaScript for this page to properly function.</noscript>
+    </section>
+
+    <div id="modal-contents"></div>
+    <footer>
+        <div class="foot-text">
+            <p><svg id="house-icon" style="height:1em; width:1em; background-color:#ff533d;" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5z" /></svg> We hope you enjoy your stay...
+                <br>
+                <div class="motto-div">
+                    <p class="motto">convenient <br/> accommodation &trade; </p>
+                    <div class="social-networks">
+                        <p class="social-qoute">Check us out at these social networks, we would like to have you as company</p>
+                        <div class="social-net-icons">
+                            <a class="social-links" href="www.twitter.com"><svg id="twitter-icon" class="social-net-icon" title="follow us on twitter" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0
+                                         .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 01-1.93.07 4.28 4.28 0 004 2.98 8.521 8.521 0 01-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" /></svg></a>
+                            <a class="social-links" href="www.whatsapp.com"><svg id="whatsapp-icon" class="social-net-icon" title="join us on whatsapp"  viewBox="0 0 24 24"><path d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.26.25-.12.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.3.24.14.39.12.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0110 10 10 10 0 01-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 012 12 10 10 0 0112 2m0 2a8 8 0 00-8 8c0 1.72.54 3.31 1.46 4.61L4.5 19.5l2.89-.96A7.95 7.95 0 0012 20a8 8 0 008-8 8 8 0 00-8-8z" /></svg></a>
+                            <a class="social-links" href="www.facebook.com"><svg id="facebook-icon" class="social-net-icon" title="like us on facebook" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 008.44-9.9c0-5.53-4.5-10.02-10-10.02z" /></svg></a>
+                            <a class="social-links" href="www.facebook.com"><svg id="facebook-messenger" class="social-net-icon" title="join us on facebook messenger" viewBox="0 0 24 24"><path d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.19 5.44 3.14 7.17.16.13.26.35.27.57l.05 1.78c.04.57.61.94 1.13.71l1.98-.87c.17-.06.36-.09.53-.06.9.27 1.9.4 2.9.4 5.64 0 10-4.13 10-9.7C22 6.13 17.64 2 12 2m6 7.46l-2.93 4.67c-.47.73-1.47.92-2.17.37l-2.34-1.73a.6.6 0 00-.72 0l-3.16 2.4c-.42.33-.97-.17-.68-.63l2.93-4.67c.47-.73 1.47-.92 2.17-.4l2.34 1.76a.6.6 0 00.72 0l3.16-2.4c.42-.33.97.17.68.63z" /></svg></a>
+                            <a class="social-links" href="www.instagram.com"><svg id="instagram" class="social-net-icon" title="follow us on instagram" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 01-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 017.8 2m-.2 2A3.6 3.6 0 004 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 003.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 011.25 1.25A1.25 1.25 0 0117.25 8 1.25 1.25 0 0116 6.75a1.25 1.25 0 011.25-1.25M12 7a5 5 0 015 5 5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5m0 2a3 3 0 00-3 3 3 3 0 003 3 3 3 0 003-3 3 3 0 00-3-3z" /></svg></a>
+                            <a class="social-links" href="www.telegram.com"><svg id="telegram" class="social-net-icon" title="join us on telegram" viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z" /></svg></a>
+                            <a class="social-links" href="www.google.com"><svg id="google-plus" class="social-net-icon" title="follow us on twitter" viewBox="0 0 24 24"><path d="M23 11h-2V9h-2v2h-2v2h2v2h2v-2h2M8 11v2.4h4c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 1.9-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 5.7 9.9 5 8 5c-3.9 0-7 3.1-7 7s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H8z" /></svg></a>
+                            <a class="social-links" href="www.pinterest.com"><svg id="pinterest-icon" class="social-net-icon" title="follow us on pinterest" viewBox="0 0 24 24"><path d="M9.04 21.54c.96.29 1.93.46 2.96.46a10 10 0 0010-10A10 10 0 0012 2 10 10 0 002 12c0 4.25 2.67 7.9 6.44 9.34-.09-.78-.18-2.07 0-2.96l1.15-4.94s-.29-.58-.29-1.5c0-1.38.86-2.41 1.84-2.41.86 0 1.26.63 1.26 1.44 0 .86-.57 2.09-.86 3.27-.17.98.52 1.84 1.52 1.84 1.78 0 3.16-1.9 3.16-4.58 0-2.4-1.72-4.04-4.19-4.04-2.82 0-4.48 2.1-4.48 4.31 0 .86.28 1.73.74 2.3.09.06.09.14.06.29l-.29 1.09c0 .17-.11.23-.28.11-1.28-.56-2.02-2.38-2.02-3.85 0-3.16 2.24-6.03 6.56-6.03 3.44 0 6.12 2.47 6.12 5.75 0 3.44-2.13 6.2-5.18 6.2-.97 0-1.92-.52-2.26-1.13l-.67 2.37c-.23.86-.86 2.01-1.29 2.7v-.03z" /></svg></a>
+                            <a class="social-links" href="www.flickr.com"><svg id="flickr-icon" class="social-net-icon" title="like us on flickr" viewBox="0 0 24 24"><path d="M11 12c0 2.5-2 4.5-4.5 4.5S2 14.5 2 12s2-4.5 4.5-4.5S11 9.5 11 12m6.5-4.5C15 7.5 13 9.5 13 12s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z" /></svg></a>
+
+                        </div>
+                    </div>
+                    <div class="links-list">
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a> </li>
+                            <li><a href="#">Top &uparrow; </a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="login.html">SignUp</a></li>
+                        </ul>
+                    </div>
+                    <div class="grayscale-logo">
+                        <img alt="Accommo Venient logo" src="resources/logo.png" />
+                        <p> <b class="accommo-venient">Accommo Venient &reg; </b> <br/> Copyright &copy;2020 &nbsp; </p>
+                    </div>
+
+                </div>
+
+
+            </p>
+        </div>
+
+
+
+        <div class="lower-footer">
+
+            <b class="author-quote"> This Project Belongs to the CTHSC students Fortunate .M, Phillippa .M and Mc Samuel .S</b>
+        </div>
+    </footer>
+    <script src="jquery/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="javascript/utilities.js"></script>
+    <script src="jquery/jquery-landlord-user.js"></script>
+</body>
+
+</html>
