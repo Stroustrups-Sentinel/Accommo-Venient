@@ -14,7 +14,7 @@ COPY . /app/
 # VOLUME /var/lib/mysql
 
 # # Expose ports
-# EXPOSE 8080 
+EXPOSE 8080 
 
 # # MySQL
 # FROM mysql:5.7
