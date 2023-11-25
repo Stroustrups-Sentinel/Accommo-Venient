@@ -1,4 +1,4 @@
-accommo_venientdb.sql
+# accommo_venientdb.sql
 
 FROM ubuntu:latest
 
