@@ -13,7 +13,7 @@
 FROM php:8.2-apache
 
 # Install dependencies 
-RUN docker-php-ext-install pdo_mysql pdo mysqli mbstring hash date bcmath filter
+RUN docker-php-ext-install pdo_mysql pdo mysqli hash date bcmath filter
 
 # Copy SQL file
 COPY accommo_venientdb.sql /docker-entrypoint-initdb.d/
