@@ -19,10 +19,10 @@ RUN docker-php-ext-install pdo_mysql pdo mysqli mbstring hash date bcmath filter
 COPY accommo_venientdb.sql /docker-entrypoint-initdb.d/
 
 # Install mariadb
-apt update
-apt-get -y install mariadb-server
-systemctl start mariadb
-systemctl enable mariadb
+ RUN apt update \
+    && apt-get -y install mariadb-server
+    && systemctl start mariadb
+    && systemctl enable mariadb
 
 # Copy code files
 COPY . /var/www/html/
