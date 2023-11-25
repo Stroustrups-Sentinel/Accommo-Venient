@@ -1,13 +1,13 @@
-# MySQL
-# Setup MySQL volume 
-VOLUME /var/lib/mysql
+# # MySQL
+# # Setup MySQL volume 
+# VOLUME /var/lib/mysql
 
-# Copy SQL file
-COPY accommo_venientdb.sql /docker-entrypoint-initdb.d/
+# # Copy SQL file
+# COPY accommo_venientdb.sql /docker-entrypoint-initdb.d/
 
-FROM mysql:5.7
-ENV MYSQL_USER=root
-ENV MYSQL_ROOT_PASSWORD=
+# FROM mysql:5.7
+# ENV MYSQL_USER=root
+# ENV MYSQL_ROOT_PASSWORD=
 
 
 FROM php:8.2-apache
@@ -15,8 +15,14 @@ FROM php:8.2-apache
 # Install dependencies 
 RUN docker-php-ext-install pdo_mysql pdo mysqli mbstring hash date bcmath filter
 
-# RUN docker-php-ext-install curl hash date filter ftp imap pdo pdo_mysql openssl mysqli exif gd mbstring opcache zlib  zip xml \
-#     intl ctype iconv bcmath fileinfo
+# Copy SQL file
+COPY accommo_venientdb.sql /docker-entrypoint-initdb.d/
+
+# Install mariadb
+apt update
+apt-get -y install mariadb-server
+systemctl start mariadb
+systemctl enable mariadb
 
 # Copy code files
 COPY . /var/www/html/
