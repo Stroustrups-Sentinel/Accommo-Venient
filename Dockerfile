@@ -1,35 +1,25 @@
-# # MySQL
-# # Setup MySQL volume 
-# VOLUME /var/lib/mysql
+accommo_venientdb.sql
 
-# # Copy SQL file
-# COPY accommo_venientdb.sql /docker-entrypoint-initdb.d/
+FROM ubuntu:latest
 
-# FROM mysql:5.7
-# ENV MYSQL_USER=root
-# ENV MYSQL_ROOT_PASSWORD=
+# Install dependencies
+RUN apt-get update && apt-get install -y wget
 
+# Download XAMPP installer
+RUN wget https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/8.0.30/xampp-linux-x64-8.0.30-0-installer.run
 
-FROM php:8.2-apache
+# Make installer executable 
+RUN chmod +x xampp-linux-x64-8.0.30-0-installer.run
 
-# Install dependencies 
-RUN docker-php-ext-install pdo_mysql pdo mysqli 
-##  hash date bcmath filter
+# Install XAMPP
+RUN ./xampp-linux-x64-8.0.30-0-installer.run
 
-# Copy SQL file
-COPY accommo_venientdb.sql /docker-entrypoint-initdb.d/
+# Expose Apache and MySQL ports
+EXPOSE 80 3306
 
-# Install mariadb
- RUN apt update \
-    && apt-get -y install mariadb-server \
-    && systemctl start mariadb \
-    && systemctl enable mariadb
+# Copy SQL script
+COPY accommo_venientdb.sql /opt/lampp/
 
-# Copy code files
-COPY . /var/www/html/
-
-# Expose ports
-EXPOSE 80
-
-CMD ["apache2ctl", "-D", "FOREGROUND"]
-
+# Start servers
+CMD /opt/lampp/xampp start && \
+    mysql -u root < /opt/lampp/accommo_venientdb.sql
