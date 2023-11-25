@@ -20,8 +20,8 @@ COPY accommo_venientdb.sql /docker-entrypoint-initdb.d/
 
 # Install mariadb
  RUN apt update \
-    && apt-get -y install mariadb-server
-    && systemctl start mariadb
+    && apt-get -y install mariadb-server \
+    && systemctl start mariadb \
     && systemctl enable mariadb
 
 # Copy code files
