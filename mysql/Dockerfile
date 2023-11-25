@@ -6,7 +6,7 @@ ENV MYSQL_USER=root
 ENV MYSQL_ROOT_PASSWORD=
 
 # Copy SQL file
-COPY ../accommo_venientdb.sql /docker-entrypoint-initdb.d/
+COPY accommo_venientdb.sql /docker-entrypoint-initdb.d/
 
 EXPOSE 3306
 
