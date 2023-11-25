@@ -22,3 +22,6 @@ VOLUME /var/lib/mysql
 FROM mysql:5.7
 ENV MYSQL_USER=root
 ENV MYSQL_ROOT_PASSWORD=
+
+RUN docker-php-ext-install pdo_mysql pdo mysqli mbstring hash date bcmath filter
+CMD ["apache2ctl", "-D", "FOREGROUND"]
