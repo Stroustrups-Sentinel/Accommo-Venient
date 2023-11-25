@@ -1,10 +1,10 @@
+# MySQL
 # Setup MySQL volume 
 VOLUME /var/lib/mysql
 
 # Copy SQL file
 COPY accommo_venientdb.sql /docker-entrypoint-initdb.d/
 
-# MySQL
 FROM mysql:5.7
 ENV MYSQL_USER=root
 ENV MYSQL_ROOT_PASSWORD=
