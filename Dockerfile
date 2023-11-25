@@ -12,7 +12,7 @@ RUN wget https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/8.0.30/xampp
 RUN chmod +x xampp-linux-x64-8.0.30-0-installer.run
 
 # Install XAMPP
-RUN ./xampp-linux-x64-8.0.30-0-installer.run
+RUN ./xampp-linux-x64-8.0.30-0-installer.run -q
 
 # Expose Apache and MySQL ports
 EXPOSE 80 3306
