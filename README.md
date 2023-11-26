@@ -25,7 +25,8 @@
     -/📂resources     (website resources)
     -/📄accommo_venientdb.sql    (SQL script | used MysqlDB)
     -/📄*.html        (page html file)
-    -/📄Dockerfile    (dockerfile) 
+    -/📄Dockerfile    (dockerfile)
+    -/📄mysql.dockerfile    (mysql dockerfile) 
     -/📄README.md     (readme doc) 
 
 ---
