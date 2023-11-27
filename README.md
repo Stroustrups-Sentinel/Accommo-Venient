@@ -1,3 +1,5 @@
+<img src="https://github.com/Stroustrups-Sentinel/Accommo-Venient/blob/main/resources/logo.png?raw=true">
+
 ## Accommo-Venient 🏠
 
 ###### * this is an old `antiqued` project along with its imperfections, it serves to showcase my coding journey as a milestone to look back at. 
